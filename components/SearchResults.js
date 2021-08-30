@@ -23,7 +23,7 @@ function SearchResults({ results }) {
                     </div>
 
                     <p className="line-clamp-2">{result.snippet}</p>
-                </div>       
+                </div>
             ))}
             <PaginationButtons />
         </div>

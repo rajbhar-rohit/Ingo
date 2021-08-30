@@ -1,6 +1,7 @@
 {
   "name": "ingo-yt",
   "version": "0.1.0",
+  "homepage": "http://ingoworld.unaux.com/",
   "private": true,
   "scripts": {
     "dev": "next dev",

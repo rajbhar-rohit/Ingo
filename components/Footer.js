@@ -15,15 +15,15 @@ function Footer() {
                 </div>
                 <div className="flex justify-center space-x-8 whitespace-nowrap
                 md:justify-self-start">
-                    <p>About</p>
-                    <p>Advertising</p>
-                    <p>Business</p>
-                    <p>How Search Works</p>
+                    <a className="link">About</a>
+                    <a className="link">Advertising</a>
+                    <a className="link">Business</a>
+                    <a className="link">How Search Works</a>
                 </div>
                 <div className="flex justify-center space-x-8 md:ml-auto">
-                    <p>Privacy</p>
-                    <p>Terms</p>
-                    <p>Settings</p>
+                    <a className="link">Privacy</a>
+                    <a className="link">Terms</a>
+                    <a className="link">Settings</a>
                 </div>
             </div>
         </footer>
