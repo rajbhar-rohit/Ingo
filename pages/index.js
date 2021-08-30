@@ -70,7 +70,6 @@ export default function Home() {
             <input 
               ref={searchInputRef} 
               type="text" 
-              placeholder="Search Ingo or type a URL" 
               className="flex-grow focus:outline-none" 
             />
             <MicrophoneIcon className="h-5 cursor-pointer" />
