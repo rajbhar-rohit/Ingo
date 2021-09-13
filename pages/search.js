@@ -11,7 +11,7 @@ function Search({ results }) {
     return (
         <div>
            <Head>
-                <title>{router.query.term} - Ingo Search</title>
+                <title>{router.query.q} - Ingo Search</title>
                 <link rel="icon" href="/favicon.ico" />   
             </Head>
 
@@ -31,7 +31,7 @@ export async function getServerSideProps(context) {
     const data = useDummyData 
         ? Response 
         : await fetch(
-            `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.term}&start=${startIndex}`
+            `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.q}&start=${startIndex}`
         ).then(response => response.json());
 
     // After the SERVER has rendered... Pass the results to the client..

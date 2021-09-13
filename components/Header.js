@@ -11,11 +11,11 @@ function Header() {
 
     const search = e => {
         e.preventDefault();
-         const term = searchInputRef.current.value;
+         const q = searchInputRef.current.value;
 
-        if (!term) return;
+        if (!q) return;
 
-        router.push(`/search?term=${term}`);
+        router.push(`/search?q=${q}`);
     }
 
     return (
@@ -35,7 +35,7 @@ function Header() {
                         ref={searchInputRef} 
                         className="flex-grow w-full focus:outline-none" 
                         type="text"
-                        defaultValue={router.query.term} 
+                        defaultValue={router.query.q} 
                     />
                     <XIcon 
                         className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition
