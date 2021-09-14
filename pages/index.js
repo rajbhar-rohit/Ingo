@@ -1,14 +1,27 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Avatar from '../components/Avatar'
 import { MicrophoneIcon, SearchIcon, ViewGridIcon } from "@heroicons/react/solid"
 import Footer from '../components/Footer'
 import { useRef } from "react";
 import { useRouter } from "next/router";
+import * as gtag from "../gtag"
 
 export default function Home() {
   const router = useRouter();
   const searchInputRef = useRef(null);
+  useEffect(() => {
+    const handlerRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    router.events.on('routeChangeComplete', handlerRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handlerRouteChange)
+    }
+  },  [router.events])
+
+
 
   const search = e => {
     e.preventDefault();
