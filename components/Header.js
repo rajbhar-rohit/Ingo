@@ -20,17 +20,17 @@ function Header() {
 
     return (
         <header className="sticky top-0 bg-white">
-            <div className="flex w-full p-6 items-center">
+            <div className="flex w-full p-5 items-center">
                 <Image 
                     src="https://logos.textgiraffe.com/logos/logo-name/Ingo-designstyle-boots-m.png"
-                    height={60}
-                    width={120}
+                    height={100}
+                    width={130}
                     onClick={() => router.push("/")}
                     className="cursor-pointer"
                     alt="Ingo Logo"
                 />
-                <form className="flex flex-grow px-6 py-3 ml-10 mr-5 border
-                border-gray-200 rounded-full shadow-lg max-w-3xl items-center">
+                <form className="flex flex-grow px-6 py-3 ml-10 mr-2.5 border
+                border-gray-200 rounded-full shadow-lg max-w-xl items-center">
                     <input 
                         ref={searchInputRef} 
                         className="flex-grow w-full focus:outline-none" 
