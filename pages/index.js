@@ -55,7 +55,7 @@ export default function Home() {
 
         {/* Right */}
         <div className="flex space-x-4 items-center">
-          <a className="link">Gmail</a>
+          <a className="link" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" passHref>Gmail</a>
           <a className="link">Images</a>
 
           {/* Icon */}
@@ -68,7 +68,7 @@ export default function Home() {
       </header>
 
       {/* Body */}
-      <form className="flex flex-col items-center mt-20 flex-grow w-4/5 ">
+      <form className="flex flex-col items-center mt-10 flex-grow w-4/5 ">
         <Image 
           src="https://logos.textgiraffe.com/logos/logo-name/Ingo-designstyle-boots-m.png"
           height={150}
