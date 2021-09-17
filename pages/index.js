@@ -55,7 +55,7 @@ export default function Home() {
 
         {/* Right */}
         <div className="flex space-x-4 items-center">
-          <a className="link" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" passHref>Gmail</a>
+          <a className="link" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
           <a className="link">Images</a>
 
           {/* Icon */}
