@@ -1,16 +1,18 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-import { GA_TRACKING_ID } from "../gtag"
+import { GA_TRACKING_ID } from "../lib/gtag"
 
 export default class MyDocument extends Document {
     render() {
         return (
             <Html>
                 <Head>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227189387958758"
+     crossorigin="anonymous"></script>
                     {/* Global Site Tag (gtag.js) - Googlw Analytics */}
                     <script 
                         async
-                        src={`https://www.googletagmanager.com/gtag/js?id={GA_TRACKING_ID}`}
+                        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
                     />
                     <script 
                         dangerouslySetInnerHTML={{
@@ -21,7 +23,7 @@ export default class MyDocument extends Document {
                         gtag('config', '${GA_TRACKING_ID}', {
                             page_path: window.location.pathname,
                         });
-                        `
+                    `,
                         }}
                     />
                 </Head>

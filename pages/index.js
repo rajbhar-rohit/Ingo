@@ -6,7 +6,7 @@ import { MicrophoneIcon, SearchIcon, ViewGridIcon } from "@heroicons/react/solid
 import Footer from '../components/Footer'
 import { useRef } from "react";
 import { useRouter } from "next/router";
-import * as gtag from "../gtag"
+import * as gtag from "../lib/gtag"
 
 export default function Home() {
   const router = useRouter();
