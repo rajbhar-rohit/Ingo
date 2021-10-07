@@ -72,20 +72,21 @@ export default function Home() {
         <Image 
           src="https://logos.textgiraffe.com/logos/logo-name/Ingo-designstyle-boots-m.png"
           height={150}
-          width={400}
+          width={220}
           alt="Ingo Logo"
           />
           <div className="flex w-full mt-5 hover:shadow-lg 
           focus-within:shadow-lg max-w-md rounded-full border 
-          border-gray-200 px-5 py-3 items-center 
-          sm:max-w-xl lg:max-w-2xl">
-            <SearchIcon className="h-5 mr-3 text-gray-500" />
+          border-gray-200 px-4 py-3 items-center 
+          sm:max-w-l lg:max-w-xl">
+            <SearchIcon className="h-6 mr-3 text-gray-500" />
             <input 
               ref={searchInputRef} 
-              type="text" 
+              type="text"
+              placeholder="Search or type a URL"
               className="flex-grow focus:outline-none" 
             />
-            <MicrophoneIcon className="h-5 cursor-pointer" />
+            <MicrophoneIcon className="h-6 cursor-pointer hidden" />
           </div>
 
           <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0
